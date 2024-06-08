@@ -1,7 +1,12 @@
 import "./App.css";
+import Rate from "./Components/Rate/Rate";
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <Rate />
+    </>
+  );
 }
 
 export default App;

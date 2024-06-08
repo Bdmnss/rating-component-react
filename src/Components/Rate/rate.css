@@ -1,0 +1,63 @@
+.rate-div {
+  width: 412px;
+  background-image: linear-gradient(#232a34, #181e27);
+  border-radius: 3rem;
+  padding: 3.2rem 3.9rem 3.2rem 3.2rem;
+}
+
+.star-div {
+  width: 4.8rem;
+  height: 4.8rem;
+  background-color: #262e38;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+h1 {
+  font-size: 2.8rem;
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 0.7rem;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  color: #969fad;
+  margin-bottom: 2.4rem;
+}
+
+.buttons {
+  display: flex;
+  gap: 2.1rem;
+}
+
+.buttons button {
+  width: 5.1rem;
+  height: 5.1rem;
+  border-radius: 50%;
+  border: none;
+  background-color: #262e38;
+  color: #7c8798;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 3.2rem;
+}
+
+.submit-div {
+  display: flex;
+  justify-content: center;
+}
+
+.submit-div button {
+  padding: 1.1rem 13.8rem 1.1rem 13.7rem;
+  border-radius: 2.25rem;
+  border: none;
+  background-color: #fc7614;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
