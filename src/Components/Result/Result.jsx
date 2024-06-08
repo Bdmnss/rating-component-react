@@ -3,13 +3,11 @@ import thankYouImg from "/images/illustration-thank-you.svg";
 
 export default function Result({ rate }) {
   return (
-    <div>
+    <div className="result-div">
       <div className="image-div">
         <img src={thankYouImg} alt="thank you image" />
       </div>
-      <div>
-        <p>You selected {rate} out of 5</p>
-      </div>
+      <div className="selected-rate-div">You selected {rate} out of 5</div>
       <div className="text-div">
         <h1>Thank you!</h1>
         <p>
