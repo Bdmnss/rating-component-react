@@ -31,7 +31,7 @@ export default function Rate({ rate, setRate, setSubmit }) {
         ))}
       </div>
       <div className="submit-div">
-        <button onClick={() => setSubmit(true)}>SUBMIT</button>
+        <button onClick={() => rate && setSubmit(true)}>SUBMIT</button>
       </div>
     </div>
   );

@@ -1,5 +1,6 @@
 import "./App.css";
 import Rate from "./Components/Rate/Rate";
+import Result from "./Components/Result/Result";
 import { useState } from "react";
 
 function App() {
@@ -7,7 +8,11 @@ function App() {
   const [submit, setSubmit] = useState(false);
   return (
     <>
-      <Rate rate={rate} setRate={setRate} setSubmit={setSubmit} />
+      {submit ? (
+        <Result rate={rate} />
+      ) : (
+        <Rate rate={rate} setRate={setRate} setSubmit={setSubmit} />
+      )}
     </>
   );
 }
