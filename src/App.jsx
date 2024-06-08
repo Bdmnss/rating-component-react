@@ -4,9 +4,10 @@ import { useState } from "react";
 
 function App() {
   const [rate, setRate] = useState(0);
+  const [submit, setSubmit] = useState(false);
   return (
     <>
-      <Rate rate={rate} setRate={setRate} />
+      <Rate rate={rate} setRate={setRate} setSubmit={setSubmit} />
     </>
   );
 }

@@ -2,8 +2,7 @@ import React from "react";
 import starImg from "/images/icon-star.svg";
 import "./rate.css";
 
-export default function Rate({ rate, setRate }) {
-  console.log(rate);
+export default function Rate({ rate, setRate, setSubmit }) {
   const buttons = [1, 2, 3, 4, 5];
   return (
     <div className="rate-div">
@@ -32,7 +31,7 @@ export default function Rate({ rate, setRate }) {
         ))}
       </div>
       <div className="submit-div">
-        <button>SUBMIT</button>
+        <button onClick={() => setSubmit(true)}>SUBMIT</button>
       </div>
     </div>
   );
