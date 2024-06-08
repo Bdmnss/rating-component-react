@@ -2,7 +2,8 @@ import React from "react";
 import starImg from "/images/icon-star.svg";
 import "./rate.css";
 
-export default function Rate() {
+export default function Rate({ rate, setRate }) {
+  console.log(rate);
   const buttons = [1, 2, 3, 4, 5];
   return (
     <div className="rate-div">
@@ -18,7 +19,16 @@ export default function Rate() {
       </div>
       <div className="buttons">
         {buttons.map((item) => (
-          <button>{item}</button>
+          <button
+            key={item}
+            onClick={() => setRate(item)}
+            style={{
+              backgroundColor: rate == item ? "#fc7614" : "",
+              color: rate == item ? "#ffffff" : "",
+            }}
+          >
+            {item}
+          </button>
         ))}
       </div>
       <div className="submit-div">
